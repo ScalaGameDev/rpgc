@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>60</y>
+      <w>190</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>template=Sys
+/Element/
+--
++name: String
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>160</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>template=Sys
+Character
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>120</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>70</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>TextBlock
+bg=cyan
+--
++name: String
++paragraphs: List[String]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>80</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=*
+m2pos=15,-10</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>30</x>
+      <y>20</y>
+      <w>430</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>aph.rpgc.model</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
