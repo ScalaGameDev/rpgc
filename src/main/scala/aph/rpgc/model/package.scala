@@ -1,8 +1,8 @@
 package aph.rpgc
 
 /** This package defines the abstract model RPGC uses for RPG system data; i.e., characters and other rules elements
-  * under compilation.  In addition, it defines concrete model objects for object types common across RPG systems.
-  * These can be used to compile system-agnostic characters, or as base classes for model objects for specific systems.
+  * under compilation.  In addition, it defines concrete classes for object types common across RPG systems.  These
+  * can be used to compile system-agnostic characters, or as base classes for model objects for specific systems.
   */
 package object model {
 
@@ -10,7 +10,7 @@ package object model {
   trait System
 
   /** System for objects that are effectively system-independent. */
-  object Agnostic extends System
+  trait Agnostic extends System
 
   /** Generic object representing a labelled chunk of text.
     *
