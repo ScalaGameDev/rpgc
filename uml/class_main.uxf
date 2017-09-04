@@ -22,7 +22,7 @@ bg=green</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>_Agnostic_
-bg=orange</panel_attributes>
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -149,7 +149,7 @@ bg=orange</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>_DND3_
-bg=orange</panel_attributes>
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
