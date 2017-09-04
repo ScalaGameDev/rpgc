@@ -16,7 +16,7 @@ package object model {
     *
     * This is a component of an [[Element]], not an independent entity, and so it neither is an [[Element]] nor is
     * associated with a [[System]].*/
-  case class TextBlock(
+  final case class TextBlock(
     /** The label for this block. */
     label: String,
 

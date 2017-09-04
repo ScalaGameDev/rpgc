@@ -8,7 +8,7 @@ object PlainText extends Format {
   /** Partial application of format type, for concision. */
   type Exporter[Elem] = export.Exporter[Elem, this.type]
 
-  implicit class TextBlockExporter(block: TextBlock) extends Exporter[TextBlock] {
+  implicit final class TextBlockExporter(block: TextBlock) extends Exporter[TextBlock] {
 
     /** Prefix for the first line in the block. */
     private val label = block.label + ": "
@@ -31,7 +31,7 @@ object PlainText extends Format {
     }
   }
 
-  implicit class CharacterExporter[Sys <: System](char: Character[Sys]) extends Exporter[Character[Sys]] {
+  implicit final class CharacterExporter[Sys <: System](char: Character[Sys]) extends Exporter[Character[Sys]] {
     /** Line inserted before each block. */
     private val spacer = ""
 
