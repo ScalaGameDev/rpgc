@@ -11,7 +11,7 @@ class PlainTextSpec extends FunSuite {
   object Alice {
     val name = "Alice"
 
-    val char = new Character[Agnostic]("Alice",
+    val char: Character[Agnostic] = Character("Alice",
       TextBlock("Description",
         """Description paragraph 1, line 1.
           |Description paragraph 1, line 2.""".stripMargin,

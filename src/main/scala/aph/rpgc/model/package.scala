@@ -47,8 +47,8 @@ package object model {
   }
 
   /** Represents the minimal definition of an RPG character. */
-  class Character[Sys <: System](
-    name: String,
-    blocks: TextBlock*
+  final case class Character[Sys <: System](
+    override val name: String,
+    override val blocks: TextBlock*
   ) extends Element[Sys](name, blocks: _*)
 }
