@@ -3,7 +3,7 @@ package export
 
 import model._
 
-/** Object defining exporters for formatting model elements as plain text; i.e., with no markup at all. */
+/** Object defining exporters for formatting model elements as plain text; i.e., zero markup. */
 object PlainText extends Format {
   /** Partial application of format type, for concision. */
   type Exporter[Elem] = export.Exporter[Elem, this.type]
@@ -31,10 +31,13 @@ object PlainText extends Format {
     }
   }
 
-  implicit final class CharacterExporter[Sys <: System](char: Character[Sys]) extends Exporter[Character[Sys]] {
+  implicit final class CharacterExporter[Sys <: System](char: Character[Sys])
+    extends Exporter[Character[Sys]] {
+
     /** Line inserted before each block. */
     private val spacer = ""
 
-    override def export(): Stream[String] = char.name +: char.blocks.flatMap {spacer +: _.export()}.toStream
+    override def export(): Stream[String] =
+      char.name +: char.blocks.flatMap {spacer +: _.export()}.toStream
   }
 }
